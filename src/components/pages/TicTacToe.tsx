@@ -35,6 +35,7 @@ const TicTacToe = () => {
     const navigate = useNavigate();
     const handleTake = (idx:number) => () => {
         if(state!==0) return
+        if(game[idx]!==0) return
         const t = [...game]
         t.splice(idx,1,turn?1:-1);
         setGame(t);
