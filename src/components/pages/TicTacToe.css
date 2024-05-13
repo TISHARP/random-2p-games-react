@@ -1,0 +1,68 @@
+.tic-tac-toe-page{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    height: calc(100vh - 40px);
+}
+.board{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    gap: 10px;
+    background-color: orange;
+}
+.board-slot{
+    aspect-ratio: 1;
+    min-width: 80px;
+    background-color: #4f4f4f;
+    line-height: 70px;
+}
+.variable-slot-x{
+    cursor: pointer;
+}
+.x-slot::before{
+    content: "X";
+    font-size: 60px;
+    justify-content: center;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    text-align: center;
+    min-width: 70px;
+    color: red;
+}
+.variable-slot-x:hover::before{
+    content: "X";
+    font-size: 60px;
+    justify-content: center;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    text-align: center;
+    min-width: 70px;
+}
+.variable-slot-o{
+    cursor: pointer;
+}
+.o-slot::before{
+    content: "O";
+    font-size: 60px;
+    justify-content: center;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    text-align: center;
+    min-width: 70px;
+    color: red;
+}
+.variable-slot-o:hover::before{
+    content: "O";
+    font-size: 60px;
+    justify-content: center;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    text-align: center;
+    min-width: 70px;
+}

@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
+import HomePage from './components/pages/HomePage';
+import PageNotFound from './components/pages/PageNotFound';
+import GamesRouter from './components/routers/GamesRouter';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="main-page-header">
+
       </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />}/>
+          <Route path="/games/*" element={<GamesRouter />}/>
+          <Route path="*" element={<PageNotFound />}/>
+        </Routes>
+      </Router>
+      <footer className="main-page-footer">
+        Open source product, please use any way you please {":)"}
+      </footer>
     </div>
   );
 }

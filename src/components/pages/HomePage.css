@@ -1,0 +1,30 @@
+.game-section-page{
+    padding: 20px;
+}
+.games-area{
+    display: flex;
+    gap: 20px;
+}
+.game-card{
+    min-width: 280px;
+    min-height: 240px;
+    text-align: center;
+    background: #4f4f4f;
+    border-radius: 16px;
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid yellow;
+    cursor: pointer;
+}
+.game-card:hover{
+    animation: 0.5s alternate ease-in-out infinite appeallight;
+}
+
+@keyframes appeallight{
+    from {
+        box-shadow: 0px 0px 10px black;
+        background: #4f4f4f;
+    } to {
+        box-shadow: 0px 0px 10px yellow;
+        background: #3f3f3f;
+    }
+}
