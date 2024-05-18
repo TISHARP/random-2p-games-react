@@ -1,5 +1,6 @@
 .game-section-page{
     padding: 20px;
+    margin-bottom: 40px;
 }
 .games-area{
     display: flex;
@@ -26,5 +27,11 @@
     } to {
         box-shadow: 0px 0px 10px yellow;
         background: #3f3f3f;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .games-area{
+        flex-direction: column;
     }
 }

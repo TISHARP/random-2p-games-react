@@ -1,12 +1,14 @@
 import { gameInfo } from "../../types/games";
 import { useNavigate } from "react-router-dom";
 import TicTacToeIcon from '../../assets/tictactoe.webp';
+import ConnectFourIcon from '../../assets/connectfour.webp'
 import "./HomePage.css";
 
 const HomePage = () => {
     const navigate = useNavigate();
     const games = [
-        {name: "Tic Tac Toe", to: '/games/tic-tac-toe', gicon: TicTacToeIcon}
+        {name: "Tic Tac Toe", to: '/games/tic-tac-toe', gicon: TicTacToeIcon},
+        {name: "Connect 4", to: '/games/connect-4', gicon: ConnectFourIcon},
     ]
     return (
         <div className="game-section-page">

@@ -1,0 +1,43 @@
+.connect-four-page{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.connect-four-page .board{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: orange;
+    border: 10px solid orange;
+    border-top: none;
+    padding: 5px;
+}
+.connect-four-page .board-slot{
+    aspect-ratio: 1;
+    min-width: 11px;
+    background-color: #4f4f4f;
+    max-width: 80px;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    border-radius: 50%;
+    border: 7px solid #cc8400;
+}
+.connect-four-page .variable-slot-x{
+    cursor: pointer;
+}
+.connect-four-page .r-slot{
+    background-color: red;
+}
+.connect-four-page .variable-slot-r:hover{
+    background-color: #ff6666;
+}
+.connect-four-page .variable-slot-y{
+    cursor: pointer;
+}
+.connect-four-page .y-slot{
+    background-color: yellow;
+}
+.connect-four-page .variable-slot-y:hover{
+    background-color: #ffff44;
+}
