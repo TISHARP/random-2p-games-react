@@ -27,17 +27,290 @@
     cursor: pointer;
 }
 .connect-four-page .r-slot{
-    background-color: red;
+    background-color: #ff0000;
 }
-.connect-four-page .variable-slot-r:hover{
+/* .connect-four-page .variable-slot-r:hover{
     background-color: #ff6666;
-}
+} */
 .connect-four-page .variable-slot-y{
     cursor: pointer;
 }
 .connect-four-page .y-slot{
-    background-color: yellow;
+    background-color: #ffff00;
 }
-.connect-four-page .variable-slot-y:hover{
-    background-color: #ffff44;
+.connect-four-page .column.row-0:hover .variable-slot-r:nth-child(6){
+    background-color: #ff8888;
+}
+.connect-four-page .column.row-0:hover .variable-slot-r:nth-child(5)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ff0000;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-0:hover .variable-slot-r:nth-child(4)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ff0000;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-0:hover .variable-slot-r:nth-child(3)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ff0000;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-0:hover .variable-slot-r:nth-child(2)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ff0000;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-0:hover .variable-slot-r:nth-child(1)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ff0000;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-1:hover .variable-slot-r:nth-child(5){
+    background-color: #ff8888;
+}
+.connect-four-page .column.row-1:hover .variable-slot-r:nth-child(4)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ff0000;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-1:hover .variable-slot-r:nth-child(3)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ff0000;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-1:hover .variable-slot-r:nth-child(2)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ff0000;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-1:hover .variable-slot-r:nth-child(1)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ff0000;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-2:hover .variable-slot-r:nth-child(4){
+    background-color: #ff8888;
+}
+.connect-four-page .column.row-2:hover .variable-slot-r:nth-child(3)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ff0000;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-2:hover .variable-slot-r:nth-child(2)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ff0000;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-2:hover .variable-slot-r:nth-child(1)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ff0000;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-3:hover .variable-slot-r:nth-child(3){
+    background-color: #ff8888;
+}
+.connect-four-page .column.row-3:hover .variable-slot-r:nth-child(2)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ff0000;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-3:hover .variable-slot-r:nth-child(1)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ff0000;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-4:hover .variable-slot-r:nth-child(2){
+    background-color: #ff8888;
+}
+.connect-four-page .column.row-4:hover .variable-slot-r:nth-child(1)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ff0000;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-5:hover .variable-slot-r:nth-child(1){
+    background-color: #ff8888;
+}
+.connect-four-page .column.row-0:hover .variable-slot-y:nth-child(6){
+    background-color: #ffff88;
+}
+.connect-four-page .column.row-0:hover .variable-slot-y:nth-child(5)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ffff00;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-0:hover .variable-slot-y:nth-child(4)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ffff00;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-0:hover .variable-slot-y:nth-child(3)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ffff00;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-0:hover .variable-slot-y:nth-child(2)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ffff00;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-0:hover .variable-slot-y:nth-child(1)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ffff00;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-1:hover .variable-slot-y:nth-child(5){
+    background-color: #ffff88;
+}
+.connect-four-page .column.row-1:hover .variable-slot-y:nth-child(4)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ffff00;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-1:hover .variable-slot-y:nth-child(3)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ffff00;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-1:hover .variable-slot-y:nth-child(2)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ffff00;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-1:hover .variable-slot-y:nth-child(1)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ffff00;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-2:hover .variable-slot-y:nth-child(4){
+    background-color: #ffff88;
+}
+.connect-four-page .column.row-2:hover .variable-slot-y:nth-child(3)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ffff00;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-2:hover .variable-slot-y:nth-child(2)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ffff00;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-2:hover .variable-slot-y:nth-child(1)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ffff00;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-3:hover .variable-slot-y:nth-child(3){
+    background-color: #ffff88;
+}
+.connect-four-page .column.row-3:hover .variable-slot-y:nth-child(2)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ffff00;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-3:hover .variable-slot-y:nth-child(1)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ffff00;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-4:hover .variable-slot-y:nth-child(2){
+    background-color: #ffff88;
+}
+.connect-four-page .column.row-4:hover .variable-slot-y:nth-child(1)::before{
+    content: "V";
+    display: block;
+    text-align: center;
+    width: min(calc(12vh - 28px),calc(14vw - 24px));
+    color: #ffff00;
+    font-size: calc(min(calc(12vh - 28px),calc(14vw - 24px)) - 12px);
+}
+.connect-four-page .column.row-5:hover .variable-slot-y:nth-child(1){
+    background-color: #ffff88;
 }

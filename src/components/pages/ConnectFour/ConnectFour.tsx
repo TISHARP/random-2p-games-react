@@ -50,10 +50,24 @@ const gameState = (game: number[][]) => {
     //If board was filled then return 2 as it is a tie.
     return 2;
 }
+const getCounts = (game: number[][]) => {
+    let ret = [];
+    for(let i = 0; i < game.length; i+=1){
+        let c = 0;
+        for(let j = 0; j < game[i].length; j+=1){
+            if(game[i][j]!==0){
+                c+=1;
+            }
+        }
+        ret.push(c);
+    }
+    return ret;
+}
 
 const ConnectFour = () => {
     const [turn, setTurn] = useState(true);
     const [game, setGame] = useState([[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]]);
+    const counts = getCounts(game);
     const vSpot = ("variable-slot-"+(turn?'r':'y'));
     const state = gameState(game);
     const navigate = useNavigate();
@@ -84,7 +98,7 @@ const ConnectFour = () => {
             {state===0?(<p>{turn?"Red":"Yellow"}'s Turn</p>):state===1?(<p>Player Red Wins!</p>):state===-1?(<p>Player Yellow Wins!</p>):(<p>It's a Tie!</p>)}
             <div className="board">
                 {game.map((col:number[],idx:number)=>(
-                    <div key={idx} className="column" onClick={handleTake(idx)}>
+                    <div key={idx} className={"column row-"+(counts[idx])} onClick={handleTake(idx)}>
                         {col.map((v:number, vidx: number)=>(
                             <div 
                                 className={"board-slot "+(v===1?"r-slot":v===-1?"y-slot":(state===0?vSpot:''))} 
