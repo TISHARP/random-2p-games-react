@@ -7,8 +7,8 @@ import "./HomePage.css";
 const HomePage = () => {
     const navigate = useNavigate();
     const games = [
-        {name: "Tic Tac Toe", to: '/games/tic-tac-toe', gicon: TicTacToeIcon},
-        {name: "Connect 4", to: '/games/connect-4', gicon: ConnectFourIcon},
+        {name: "Tic Tac Toe", to: '/games/tic-tac-toe', gicon: 'https://sharp-dev-trev-public.s3.us-east-2.amazonaws.com/tictactoe.webp'},
+        {name: "Connect 4", to: '/games/connect-4', gicon: 'https://sharp-dev-trev-public.s3.us-east-2.amazonaws.com/connectfour.webp'},
     ]
     return (
         <div className="game-section-page">
