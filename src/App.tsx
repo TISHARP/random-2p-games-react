@@ -1,9 +1,9 @@
 import React from 'react';
 import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import HomePage from './components/pages/HomePage';
-import PageNotFound from './components/pages/PageNotFound';
-import GamesRouter from './components/routers/GamesRouter';
+import HomePage from './pages/HomePage/HomePage';
+import PageNotFound from './pages/PageNotFound/PageNotFound';
+import GamesRouter from './routers/GamesRouter';
 
 function App() {
   return (

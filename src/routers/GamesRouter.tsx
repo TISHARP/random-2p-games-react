@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import TicTacToe from "../pages/TicTacToe/TicTacToe";
-import PageNotFound from "../pages/PageNotFound";
+import PageNotFound from "../pages/PageNotFound/PageNotFound";
 import ConnectFour from "../pages/ConnectFour/ConnectFour";
 
 const GamesRouter = () => {

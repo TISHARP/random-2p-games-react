@@ -1,0 +1,9 @@
+export const GROUND_SPEED = 0.05;
+export const SPEED_MULT = 1.05; //Multiplier to be used to speed up the game based on score.
+export const SCORE_PER_SECOND = 20; //Score gained per second
+export const JUMP_SPEED = 0.30; //Jump speed constant.
+export const GRAVITY = 0.001; //Gravity constant
+export const DINO_FRAMES = ['/images/dino-run-0.png','/images/dino-run-1.png'];//we have two frames for dino running
+export const DINO_FRAME_TIME = 100;//100ms
+export const CACTUS_INTERVAL_MIN = 700;
+export const CACTUS_INTERVAL_MAX = 2000;
