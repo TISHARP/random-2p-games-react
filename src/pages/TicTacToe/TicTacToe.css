@@ -54,7 +54,7 @@
     line-height: normal;
     text-align: center;
     min-width: 70px;
-    color: red;
+    color: #00ff00;
 }
 .tic-tac-toe-page .variable-slot-o:hover::before{
     content: "O";
